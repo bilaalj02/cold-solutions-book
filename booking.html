@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule Your Demo - Cold Solutions</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0a0a0b;
+            min-height: 100vh;
+            color: #ffffff;
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 25% 25%, rgba(99, 102, 241, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 75% 75%, rgba(168, 85, 247, 0.1) 0%, transparent 50%);
+            z-index: -1;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .logo {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #0ea5e9;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.02em;
+        }
+
+        .tagline {
+            font-size: 1rem;
+            color: #9ca3af;
+            font-weight: 400;
+            margin-bottom: 2rem;
+            letter-spacing: 0.01em;
+        }
+
+        .hero-text {
+            max-width: 500px;
+            margin: 0 auto;
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-title {
+            font-size: 2.2rem;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 0.5rem;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+
+        .hero-subtitle {
+            font-size: 1.1rem;
+            color: #d1d5db;
+            line-height: 1.5;
+        }
+
+        .booking-section {
+            background: rgba(17, 17, 19, 0.8);
+            border-radius: 16px;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            border: 1px solid rgba(75, 85, 99, 0.3);
+            backdrop-filter: blur(10px);
+        }
+
+        .booking-header {
+            background: linear-gradient(135deg, #1f2937, #374151);
+            padding: 1.5rem;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
+        .booking-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(99, 102, 241, 0.5), transparent);
+        }
+
+        .booking-header h2 {
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.01em;
+        }
+
+        .booking-header p {
+            opacity: 0.8;
+            font-size: 0.95rem;
+            color: #d1d5db;
+        }
+
+        .calendly-container {
+            padding: 0;
+            height: 700px;
+            width: 100%;
+        }
+
+        .calendly-inline-widget {
+            height: 100%;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.1rem;
+            }
+
+            .logo {
+                font-size: 2rem;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+
+            .calendly-container {
+                height: 600px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">COLD SOLUTIONS</div>
+            <p class="tagline">Experience the Power of AI for Your Business — Schedule a Demo</p>
+        </header>
+
+        <div class="hero-text">
+            <h1 class="hero-title">Schedule Your Demo</h1>
+            <p class="hero-subtitle">
+                Ready to transform your business with AI? Book your personalized demo below.
+            </p>
+        </div>
+
+        <div class="booking-section">
+            <div class="booking-header">
+                <h2>Choose Your Preferred Time</h2>
+                <p>Select a convenient time slot that works for your schedule</p>
+            </div>
+            
+            <div class="calendly-container">
+                <!-- Calendly inline widget begins -->
+                <div class="calendly-inline-widget" 
+                     data-url="https://calendly.com/contact-coldsolutions/30min"
+                     style="min-width:320px;height:700px;">
+                </div>
+                <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+                <!-- Calendly inline widget ends -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>

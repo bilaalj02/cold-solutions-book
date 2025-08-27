@@ -1,0 +1,42 @@
+# Ignore all system directories and files
+AppData/
+.claude/
+Documents/
+Desktop/
+Downloads/
+Music/
+Pictures/
+Videos/
+OneDrive/
+3D Objects/
+Contacts/
+Favorites/
+Links/
+Saved Games/
+Searches/
+Cookies/
+Application Data/
+Local Settings/
+NetHood/
+PrintHood/
+Recent/
+SendTo/
+Start Menu/
+Templates/
+My Documents/
+Temporary Internet Files/
+*.tmp
+*.temp
+*.log
+*.cache
+Thumbs.db
+.DS_Store
+.vscode/
+*.swp
+*.swo
+*~
+
+# Include only our booking page
+!booking.html
+!.gitignore
+!README.md
